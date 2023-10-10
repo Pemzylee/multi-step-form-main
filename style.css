@@ -1,0 +1,980 @@
+@font-face {
+    font-family: 'Bold';
+    src: url(assets/fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(assets/fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url(assets/fonts/Ubuntu-Medium.ttf);
+}
+
+body {
+    background-color: hsl(217, 100%, 97%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 70vw;
+    height: 81vh;
+    position: relative;
+    top: 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sidebar {    
+    background: url(assets/images/bg-sidebar-desktop.svg) no-repeat;
+    background-size: cover;
+    color: hsl(0, 0%, 100%);
+    width: 18vw;
+    padding-bottom: 15%;
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 12%;
+    right: 65%;
+    border-radius: 0.6rem;
+}
+
+#sidebar h3 {
+    font-weight: 700;
+    font-family: 'Bold';
+    position: relative;
+    /* bottom: 50px; */
+    left: 50px;
+    font-size: 15px;
+}
+
+#sidebar p {
+    font-weight: 400;
+    font-family: 'Regular';
+    font-size: 13px;
+    color: hsl(229, 24%, 87%);
+    position: relative;
+    /* bottom: 36px; */
+    left: 50px;
+}
+
+#step1 {
+    position: relative;
+    left: 20%;
+    bottom: 23vw;
+}
+
+#step1 h1 {
+    font-family: 'Bold';
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(213, 96%, 18%);
+}
+
+#step1 {
+    position: relative;
+    left: 20%;
+    bottom: 23vw;
+} 
+
+#step1 h3 {
+    color: hsl(213, 96%, 18%);
+    font-family: 'Bold';
+    font-weight: 400;
+    font-size: 15px;
+    position: relative;
+}
+
+#sidebar span {
+    user-select: none;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+    padding: .4rem .7rem;
+    /* color: hsl(0, 0%, 100%); */
+}
+  
+.num1 {
+    background-color: hsl(228, 100%, 84%);
+    color: hsl(213, 96%, 18%);
+}
+
+.num {
+    position: relative;
+    top: 30px;
+}
+
+.num2 {
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    bottom: 5px;
+}
+
+.num3 {
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    bottom: 40px;
+}
+
+.num4 {
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    bottom: 70px;
+}
+
+.num p {
+    bottom: 40%;
+}
+
+.num h3 {
+    bottom: 57%;
+}
+
+.num-2 p {
+    bottom: 40px;
+}
+
+.num-2 h3 {
+    bottom: 61%;
+}
+
+.num-3 p {
+    bottom: 84%;
+}
+
+.num-3 h3 {
+    bottom: 101%;
+}
+
+.num-4 p {
+    bottom: 117%;
+}
+
+.num-4 h3 {
+    bottom: 133%;
+}
+
+#step1 p {
+    color: hsl(229, 24%, 87%);
+    font-family: 'Regular';
+    font-weight: 400;
+}
+
+#step1 input {
+    width: 31vw;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 1rem;
+    position: relative;
+}
+
+
+#btn1 {
+    background-color: hsl(213, 96%, 18%);
+    border: none;
+    border-radius: 10px;
+    width: 8vw;
+    height: 7vh;
+    cursor: pointer;
+    position: relative;
+    bottom: 20px;
+    left: 27%;
+    color: hsl(0, 0%, 100%);
+}
+
+.hid {
+    display: none;
+}
+
+
+#errorName, #errorEmail, #errorNumber {
+    /* display: none; */
+    padding-left: 56%;
+    color: rgb(255, 98, 87);
+    position: relative;
+    font-family: 'Bold';
+    font-weight: 500;
+    font-size: 14px;
+    bottom: 32px;
+}
+
+#step2 {
+    display: none;
+}
+
+#step2 h1 {
+    color: hsl(213, 96%, 18%);
+    font-family: 'Bold';
+    font-weight: 700;
+    position: relative;
+    left: 25%;
+    bottom: 45%;
+}
+
+.mon-yer {
+    color: hsl(231, 11%, 63%);
+    font-family: 'Regular';
+    font-weight: 400;
+    position: relative;
+    left: 25%;
+    bottom: 45%;
+}
+
+.plan-card-selected {
+    background-color: hsl(217, 100%, 97%);
+}
+
+.arcade {
+    border: 1px solid hsl(243, 100%, 62%);
+    border-radius: 10px;
+    width: 11vw;
+    padding-left: 15px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.hid {
+    display: none;
+}
+
+.plan {
+    padding-right: 10%;
+    display: flex;
+    bottom: 35%;
+    position: relative;
+    left: 25%;
+}
+
+.advanced {
+    position: relative;
+    border: 1px solid hsl(243, 100%, 62%);
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 20px;
+    cursor: pointer;
+    width: 11vw;
+    /* bottom: 33%; */
+    left: 5%;
+}
+
+.plan-price {
+    color: hsl(231, 11%, 63%);
+}
+
+.pro {
+    position: relative;
+    border: 1px solid hsl(243, 100%, 62%);
+    border-radius: 10px;
+    padding-left: 15px;
+    cursor: pointer;
+    padding-top: 20px;
+    /* bottom: 66.5%; */
+    width: 11vw;
+    left: 10%;
+}
+
+.plan h3 {
+    color: hsl(213, 96%, 18%);
+    font-family: 'Bold';
+    font-weight: 500;
+    position: relative;
+    top: 15px;
+}
+
+.plan-discounts {
+    color:  hsl(213, 96%, 18%);
+    font-family: 'Medium';
+    font-weight: 400;
+}
+
+.hidden {
+    display: none;
+}
+
+.yer-mo {
+    position: relative;
+    bottom: 27%;
+    left: 25%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    border-radius: 10px;
+    width: 41vw;
+    background-color: hsl(217, 100%, 97%);
+}
+
+.toggle {
+    width: 3vw;
+    height: 3vh;
+    border-radius: 50px;
+    background-color: hsl(213, 96%, 18%);;
+    cursor: pointer;
+}
+
+.toggle-circle {
+    width: 1vw;
+    height: 2vh;
+    display: block;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#btn2 {
+    border: none;
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 11%, 63%);
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+    right: 6%;
+}
+
+
+.nt-bk {
+    position: relative;
+    bottom: 5%;
+    left: 25%;
+}
+
+.yer {
+    /* color: hsl(231, 11%, 63%); */
+    font-family: 'Medium';
+    font-weight: 500;
+}
+
+.mon {
+    color: hsl(213, 96%, 18%);
+    font-family: 'Medium';
+    font-weight: 500;
+    /* padding-left: 50px;*/
+}
+
+#step2 {
+    /* display: flex; */ 
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* justify-content: center; */
+    bottom: 30%;
+}
+
+
+#step3 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 60%;
+}
+
+#step3 h1 {
+    color: hsl(213, 96%, 18%);
+    font-family: 'Bold';
+    font-weight: 700;
+    position: relative;
+    left: 26.5%;
+}
+
+#step3 h2 {
+    font-size: 15px;
+    color: hsl(213, 96%, 18%);
+    font-family: 'Bold';
+    font-weight: 700;
+}
+
+#step3 h3 {
+    font-size: 15px;
+    color: hsl(231, 11%, 63%);
+    position: relative;
+}
+
+.click h3{
+    bottom: 15px;
+}
+
+#step3 p {
+    font-size: 15px;
+    position: relative;
+    color: hsl(243, 100%, 62%);
+}
+
+.online {
+    width: 39.5vw;
+    border: 1px solid hsl(243, 100%, 62%);
+    height: 10vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.online p {
+    bottom: 112%;
+    left: 80%;
+}
+
+.large p {
+    bottom: 112%;
+    left: 80%;
+}
+
+.large {
+    width: 39.5vw;
+    border: 1px solid hsl(243, 100%, 62%);
+    height: 10vh;
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profile {
+    width: 39.5vw;
+    border: 1px solid hsl(243, 100%, 62%);
+    height: 10vh;
+    position: relative;
+    top: 26px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profile p {
+    left: 80%;
+    bottom: 111%;
+}
+
+#step3 input[type="checkbox"] {
+    width: 2vw;
+    height: 3vh;
+    border: 1px solid hsl(231, 11%, 63%);
+    position: relative;
+    top: 33%;
+    left: 3%;
+}
+
+.click {
+    position: relative;
+    bottom: 30%;
+    left: 16%;
+}
+
+.add-ons {
+    left: 26.5%;
+    bottom: 26px;
+}
+
+.choose-plan {
+    position: relative;
+    left: 27%;
+    bottom: 30px;
+}
+
+.toggle-year {
+    display: flex;
+    justify-content: end;
+}
+
+.toggle-text {
+    opacity: 0.5;
+}
+
+
+/* Active step number styles */
+.step-number-active {
+    background-color: hsl(228, 100%, 84%);
+    color: hsl(213, 96%, 18%);
+}
+
+/* Inactive step number styles */
+.step-number-inactive {
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+}
+
+#step4 {
+    display: none;
+    bottom: 58%;
+    position: relative;
+    left: 13%;
+}
+
+.selected_plan {
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 10px;
+    width: 35vw;
+}
+
+.show-plan h3 {
+    color: hsl(213, 96%, 18%);
+    position: relative;
+    left: 5%;
+    top: 16px;
+    font-family: 'Bold';
+}
+
+.change-btn {
+    position: relative;
+    left: 5%;
+    color: hsl(231, 11%, 63%);
+    bottom: 1px;
+}
+
+.show-plan p {
+    color: hsl(213, 96%, 18%);
+    position: relative;
+    left: 83%;
+    font-family: 'Bold';
+    bottom: 58px;
+}
+
+
+.total h3 {
+    color: hsl(231, 11%, 63%);
+}
+
+.total-price {
+    position: relative;
+    left: 81%;
+    bottom: 36px;
+    color: hsl(243, 100%, 62%);
+    font-size: 20px;
+}
+
+
+#step4 h1 {
+    color: hsl(213, 96%, 18%);
+    font-family: 'Bold';
+}
+
+.descrip {
+    color: hsl(231, 11%, 63%);
+    font-family: 'Medium';
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -5%;
+    left: 20px;
+}
+
+.selected-service-name {
+    color: hsl(231, 11%, 63%);
+}
+
+.selected-service-price {
+    color: hsl(213, 96%, 18%);
+    font-family: 'Bold';
+    right: 35px;
+    position: relative;
+}
+
+.line {    
+    background-color: hsl(231, 11%, 63%);
+    height: 1px;
+    bottom: 29px;
+    position: relative;
+    width: 31vw;
+    left: 5%;
+}
+
+#btn3 {
+    background-color: hsl(243, 100%, 62%);
+    border: none;
+    border-radius: 10px;
+    width: 8vw;
+    height: 7vh;
+    cursor: pointer;
+    position: relative;
+    bottom: 20px;
+    left: 23%;
+    color: hsl(0, 0%, 100%);
+    display: none;
+}
+
+
+#step5 {
+    display: none;
+    bottom: 50%;
+    position: relative;
+    left: 18%;
+    text-align: center;
+}
+
+#step5 h1 {
+    color: hsl(213, 96%, 18%);
+    font-family: "Bold";
+    font-weight: 500;
+}
+
+#step5 p {
+    font-family: "Regular";
+    padding-inline: 29%;
+    color: hsl(231, 11%, 63%);
+}
+
+@media (max-width: 375px) {
+    body {
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .container {
+        background-color: hsl(217, 100%, 97%);
+        height: 90vh;
+        overflow: hidden;
+        width: 100vw;
+        top: -7px;
+        border-radius: 0;
+    }
+
+    #sidebar {
+        background: url(assets/images/bg-sidebar-mobile.svg) no-repeat;
+        padding-left: 0px;
+        border-radius: 0;
+        position: relative;
+        top: -5px;
+        width: 100vw;
+        right: 0;
+    }
+
+    #sidebar p {
+        display: none;
+    }
+
+    #sidebar h3 {
+        display: none;
+    }
+
+    #step1 {
+        background-color: hsl(0, 0%, 100%);
+        width: 85vw;
+        height: 53vh;
+        position: relative;
+        left: 0;
+        padding-left: 30px;
+        bottom: 28%;
+        border-radius: 10px;
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    .num {
+        position: relative;
+        left: 20%;
+        top: 24px;
+    }
+
+    .num2 {
+        position: relative;
+        left: 35%;
+        top: 6px;
+    }
+
+    .num3 {
+        position: relative;
+        left: 50%;
+        top: -13px;
+    }
+
+    .num4 {
+        position: relative;
+        left: 65%;
+        top: -30px;
+    }
+
+    #step1 p {
+        font-size: 17px;
+        padding-inline: 10px;
+        position: relative;
+        bottom: 20px;
+        right: 10px;
+    }
+
+    #step1 h3 {
+        position: relative;
+        bottom: 23px;
+    }
+
+    #step1 input {
+        position: inherit;
+        width: 70vw;
+        font-size: 15px;
+        border-radius: 5px;
+        bottom: 12%;
+        padding: 1.2rem;
+        height: 0vh;
+    }
+
+    #btn1 {
+        padding: 15px 10px;
+        width: 25vw;
+        position: fixed;
+        bottom: 13px;
+        left: 67%;
+        height: 6vh;
+        font-size: 15px;
+    }
+
+    #errorName, #errorEmail, #errorNumber {
+        position: relative;
+        bottom: 80px;
+        padding-left: 46%;
+    }
+
+    .plan {
+        bottom: 0;
+        left: 0;
+    }
+
+    .arcade {
+        width: 90vw;
+        height: 9vh;
+        padding: 0;
+        padding-right: 72%;
+    }
+
+    .plan h3 {
+        left: 70px;
+        top: -70%;
+    }
+
+    .plan p {
+        position: relative;
+        bottom: 100%;
+        left: 82%;
+    }
+
+    .arcade p {
+        left: 110%;
+    }
+
+    .pro p {
+        left: 145%;
+    }
+
+    .advanced {
+        width: 50vw;
+        padding: 0;
+        height: 9vh;
+        left: -94.5%;
+        padding-right: 63%;
+        top: 93px;
+    }
+
+    .plan img {
+        position: relative;
+        top: 11px;
+        left: 10px;
+    }
+
+    .pro {
+        left: -188.5%;
+        top: 189px;
+        padding: 0;
+        height: 9vh;
+        width: 50vw;
+        padding-right: 76%;
+    }
+
+    #step2 {
+        background-color: hsl(0, 0%, 100%);
+        width: 85vw;
+        height: 450vh;
+        position: relative;
+        left: 0;
+        padding-left: 30px;
+        bottom: 13.5%;
+        border-radius: 10px;
+    }
+
+    #step2 h1 {
+        left: 0;
+        bottom: 0;
+    }
+
+    .mon-yer {
+        left: -8%;
+        bottom: 0;
+        padding-inline: 10%;
+    }
+
+    .yer-mo {
+        bottom: 0;
+        left: 0%;
+        top: 44%;
+        width: 72vw;
+        height: 6vh;
+    }
+
+    .plan h5 {
+        position: relative;
+        margin-inline: -40%;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        left: 152%;
+        bottom: 149%;
+    }
+
+    .pro h5 {
+        left: 188%;
+    }
+
+    .advanced h5 {
+        left: 124%;
+    }
+
+    .toggle {
+        width: 15vw;
+        height: 3.5vh;
+    }
+
+    .toggle-circle {
+        left: 10px;
+        width: 6vw;
+        height: 2.7vh;
+    }
+
+    #btn2 {
+        right: 35%;
+        top: 30px;
+    }
+
+    #step3 input[type="checkbox"]{
+        width: 6vw;
+        top: 28%;
+    }
+
+    .online, .large, .profile {
+        width: 83vw;
+        right: 5%;
+        position: relative;
+    }
+
+    .choose-plan {
+        left: 2%;
+        /* top: -2%; */
+        bottom: 15px;
+    }
+
+    .add-ons {
+        padding-inline: 10px;
+        bottom: 17px;
+        left: -6%;
+    }
+
+    #step3 h1 {
+        position: relative;
+        left: -10px;
+    }
+
+    #step3 {
+        background-color: hsl(0, 0%, 100%);
+        width: 85vw;
+        height: 267vh;
+        position: relative;
+        padding-left: 30px;
+        bottom: 22%;
+        border-radius: 10px;
+    }
+
+    #step4 {
+        background-color: hsl(0, 0%, 100%);
+        width: 85vw;
+        height: 267vh;
+        padding-left: 30px;
+        top: -22%;
+        margin-right: 26%;
+        border-radius: 10px;
+    }
+
+    .selected_plan {
+        padding-left: 10px;
+        padding-right: 49%;
+    }
+
+    .show-plan h3 {
+        font-size: 17px;
+    }
+
+    .show-plan p {
+        margin-left: 81%;
+        top: -48px;
+    }
+
+    .selected-service-price {
+        left: 86%;
+    }
+
+    .selected-service-name {
+        position: relative;
+        margin-inline: -26%;
+        left: 18%;
+    }
+
+    .total h3 {
+        font-size: 15px;
+    }
+
+    .total-price {
+        margin-left: -10%;
+    }
+
+    .descrip {
+        padding-inline: 5%;
+        right: 5%;
+        font-size: 17px;
+        position: relative;
+    }
+
+    .line {
+        padding-left: 108%;
+    }
+
+    .flex-group {
+        left: 28%;
+    }
+
+    #btn3 {
+        padding-right: 24%;
+        font-size: 17px;
+        padding-left: 8%;
+        top: -11px;
+        margin-left: 17%;
+    }
+
+    #step5 {
+        background-color: hsl(0, 0%, 100%);
+        width: 85vw;
+        height: 179vh;
+        padding-left: 30px;
+        top: -29.5%;
+        left: 0;
+        border-radius: 10px;
+    }
+
+    #step5 img {
+        margin-top: 23%;
+        position: relative;
+        width: 15vw;
+    }
+
+    #step5 p {
+        padding-inline: 8.2%;
+    }
+}
